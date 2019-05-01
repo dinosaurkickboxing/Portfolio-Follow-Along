@@ -25,6 +25,7 @@ header{
   flex-grow: 8;
   text-align: center;
   font-weight: 700;
+  color: #0048FC;
 }
 
 .nav-button{
@@ -38,15 +39,20 @@ nav{
 
 nav ul{
   margin: 0;
-  padding: 0;
+  padding: 0px 15px;
   list-style: none;
   display: none;
   position: absolute;
   right:10px;
   text-align: right;
-  background-color: white;
+  background-color: #0048FC;
+  color: white;
   padding: 10px 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+}
+
+nav ul li{
+  padding: 10px 0px;
 }
 
 nav:hover ul{
@@ -71,6 +77,7 @@ main{
 main .profile-img img{
   max-width: 80%;
   border-radius: 50%;
+  padding-top: 15px;
 }
 
 main section .about{
@@ -86,6 +93,7 @@ main section .about{
 
 footer{
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .social-m i{
@@ -94,6 +102,9 @@ footer{
 }
 
 .contact a{
+  background-color: #D7E1F9;
+  padding: 20px 40px;
+  border-radius: 15px;
   text-decoration: none;
   color: #0048FC;
 }
@@ -107,6 +118,15 @@ footer{
 
 
 @media screen and (min-width: 800px) {
+
+.name, .nav-button{
+  padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .nav-button{
+    padding-right: 30px;
+  }
 
   section{
     display: flex;
@@ -144,7 +164,7 @@ footer{
   }
 
   .contact{
-    padding-left: 15px;
+    padding-right: 15px;
     text-align: right;
   }
 
