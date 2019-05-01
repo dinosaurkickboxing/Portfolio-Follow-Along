@@ -1,12 +1,15 @@
 *{
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /*header*/
 
 header{
   display: flex;
+  padding: 15px;
 }
 
 .logo{
@@ -58,6 +61,7 @@ main{
   min-height: 500px;
   margin: 50px 0px;
   /*border: 1px solid black;*/
+  background-color: #D7E1F9;
 }
 
 .profile-img{
@@ -70,8 +74,9 @@ main .profile-img img{
 }
 
 main section .about{
-
+  padding: 20px;
 }
+
 
 /*end of main*/
 
@@ -90,11 +95,57 @@ footer{
 
 .contact a{
   text-decoration: none;
-  color: #F46545;
+  color: #0048FC;
 }
 
 .contact a:hover{
-  color: #FCB5A4;
+  color: #7EA2FC;
 }
 
 /*end of footer*/
+
+
+
+@media screen and (min-width: 800px) {
+
+  section{
+    display: flex;
+  }
+
+  main section .about{
+    margin-left: 6%;
+    width: 80%;
+    padding: 50px;
+  }
+
+  main .profile-img{
+    padding-top: 50px;
+  }
+
+  .profile-img{
+    flex: 1;
+  }
+
+  .about{
+    flex: 1;
+  }
+
+  footer{
+    display: flex;
+  }
+
+  .copy, .social-m, .contact{
+    flex: 1;
+  }
+
+  .copy{
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  .contact{
+    padding-left: 15px;
+    text-align: right;
+  }
+
+}
