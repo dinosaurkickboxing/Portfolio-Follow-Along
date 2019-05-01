@@ -39,3 +39,24 @@ nav ul{
 nav:hover ul{
   display: block;
 }
+
+/*end of head*/
+
+/*main content*/
+
+main{
+  min-height: 200px;
+  border: 1px solid black;
+}
+
+/*end of main*/
+
+
+
+/*footer*/
+
+footer{
+  text-align: center;
+}
+
+/*end of footer*/
